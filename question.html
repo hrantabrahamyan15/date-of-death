@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date of death</title>
+    <link rel="stylesheet" href="./css/questions.global.css" />
+    <link rel="icon" href="./assets/moon.svg" />
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <p class="header__title">
+          Мы расскажем Вам не только подробности вашей смерти, но также поможем
+          Вам избежать этой ужасной даты и продлить вашу жизнь на многие годы.
+        </p>
+        <div class="header__tooltip">
+          <p class="header__tooltip_text"></p>
+        </div>
+        <img class="header__icon" src="./assets/eye.svg" alt="image eye" />
+      </div>
+    </header>
+    <div class="divider"></div>
+    <section>
+      <div class="container content">
+        <div id="stepTwo" class="content__block">
+          <h1 class="content__title">
+            Когда Вы чувствуете себя наиболее комфортно?
+          </h1>
+          <button class="content__button stepTwoButton">Утро</button>
+          <button class="content__button stepTwoButton">День</button>
+          <button class="content__button stepTwoButton">Вечер</button>
+          <button class="content__button stepTwoButton">Ночь</button>
+        </div>
+        <div id="stepTree" class="content__block">
+          <h1 class="content__title">Укажите свою дату рождения:</h1>
+          <div class="select__wrapper sl">
+            <select id="selectDate" class="select">
+              <option selected hidden>День</option>
+            </select>
+          </div>
+          <div class="select__wrapper">
+            <select id="selectMount" class="select">
+              <option selected hidden>Месяц</option>
+            </select>
+          </div>
+          <div class="select__wrapper">
+            <select id="selectYear" class="select">
+              <option selected hidden>Год</option>
+            </select>
+          </div>
+          <button class="content__button stepTreeButton">Далее</button>
+        </div>
+        <div id="stepFour" class="content__block">
+          <h1 class="content__title">Снятся ли Вам умершие люди?</h1>
+          <button class="content__button stepFourButton">Да</button>
+          <button class="content__button stepFourButton">Нет</button>
+          <button class="content__button stepFourButton">Иногда</button>
+        </div>
+        <div id="stepFive" class="content__block">
+          <h1 class="content__title">
+            Запись, которую Вы услышите, может шокировать людей с неокрепшей
+            психикой. Вы готовы узнать, что ждет именно Вас?
+          </h1>
+          <button class="content__button stepFiveButton">Да</button>
+          <button class="content__button stepFiveButton">
+            Затрудняюсь ответить
+          </button>
+        </div>
+        <div class="content__footer">
+          <img
+            class="content__footer_icon"
+            src="./assets/moon.svg"
+            alt="image moon"
+          />
+          <p class="content__footer_text">Вопрос 2-5</p>
+        </div>
+      </div>
+    </section>
+    <div class="loader">
+      <div class="lds-spinner"></div>
+      <p>Loading</p>
+    </div>
+    <div class="recorting">
+      <div class="recorting__container">
+        <img src="./assets/call.svg" alt="image recorting" />
+        <div class="recorting__radio"></div>
+        <p class="recorting__title"><span></span>%</p>
+        <p class="recorting__subtitle">Запись сообщения</p>
+      </div>
+    </div>
+    <div class="call">
+      <div class="call__modal">
+        <div class="call__modal_content">
+          <a href="/">Главная Страница</a>
+        </div>
+      </div>
+      <div class="call__container">
+        <div class="call__tooltip">
+          <p>
+            Спасибо за Ваши ответы! ,<br />
+            <span>
+              Мы подготовили для Вас персональную аудио запись с Вашим
+              прогнозом.
+            </span>
+          </p>
+        </div>
+        <p class="call__title">
+          Вы можете узнать, как повлиять на события, которые ожидают вас в
+          ближайшем будущем.
+        </p>
+        <div class="call__message">
+          <p class="call__message_text">
+            <span>
+              Первое значимое событие может произойти уже 14.02.2021,
+            </span>
+            Вам надо быть готовым, что бы последствия не оказались необратимыми.
+          </p>
+        </div>
+        <p class="call__text">
+          Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона.
+          Прослушайте важную информацию!
+        </p>
+        <button class="content__button call__button">
+          Позвонить и прослушать
+        </button>
+        <p class="call__footer">
+          TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+          FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,
+        </p>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
